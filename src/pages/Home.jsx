@@ -5,15 +5,20 @@ import styled from "styled-components";
 
 function Home() {
   const [movies, setMovies] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getTrending()
     .then(data => setMovies(data.results))
+    .finally(() => setLoading(false));
   }, [])
 
   return (
     <div>
+      {loading && <p>Carregando...</p>}
+
       {
+        !loading && (
         movies.length > 0 ?
         <MoviesContainer>
           {movies.map(movie => (
@@ -21,7 +26,7 @@ function Home() {
           ))}
         </MoviesContainer>
         : <p>Nenhum filme encontrado.</p>
-      }
+      )}
     </div>
   )
 }
