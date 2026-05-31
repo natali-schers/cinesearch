@@ -1,4 +1,5 @@
 import { createContext } from 'react';
+import { useState, useContext } from 'react';
 
 // Criação do contexto
 const FavoritesContext = createContext();
@@ -30,4 +31,6 @@ export function FavoritesProvider({ children }) {
 // Hook personalizado para acessar o contexto
 export function useFavorites() {
     const context = useContext(FavoritesContext);
+
+    return context;
 }
