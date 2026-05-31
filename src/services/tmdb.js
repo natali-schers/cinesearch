@@ -3,7 +3,7 @@ const BASE_URL = 'https://api.themoviedb.org/3';
 export const IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
 
 async function fetcher(endpoint) {
-  const response = await fetch(`${BASE_URL}/${endpoint}?api_key=${API_KEY}`);
+  const response = await fetch(`${BASE_URL}/${endpoint}?language=pt-BR&api_key=${API_KEY}`);
 
   if (!response.ok) {
     throw new Error(`Erro na API: ${response.statusText}`);

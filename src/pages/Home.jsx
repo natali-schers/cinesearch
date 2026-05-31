@@ -20,11 +20,14 @@ function Home() {
       {
         !loading && (
         movies.length > 0 ?
+        <>
+        <h1>🎬 Filmes em alta da semana 📽️</h1>
         <MoviesContainer>
           {movies.map(movie => (
             <MovieCard key={movie.id} movie={movie} />
           ))}
         </MoviesContainer>
+        </>
         : <p>Nenhum filme encontrado.</p>
       )}
     </div>
