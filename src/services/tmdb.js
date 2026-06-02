@@ -24,5 +24,5 @@ export async function getTrending(time_window = 'week') {
 
 // Busca detalhes de um filme específico pelo ID
 export async function getMovieDetails(id) {
-  return fetcher(`movie/${id}?`)
+  return fetcher(`movie/${id}`)
 }

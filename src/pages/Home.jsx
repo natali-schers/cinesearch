@@ -6,10 +6,12 @@ import styled from "styled-components";
 function Home() {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [erro, setErro] = useState(null);
 
   useEffect(() => {
     getTrending()
     .then(data => setMovies(data.results))
+    .catch(err => setErro('Erro ao carregar filmes em alta. Tente novamente mais tarde.'))
     .finally(() => setLoading(false));
   }, [])
 
@@ -17,8 +19,10 @@ function Home() {
     <div>
       {loading && <p>Carregando...</p>}
 
+      {erro && <p>{erro}</p>}
+
       {
-        !loading && (
+        !loading && !erro && (
         movies.length > 0 ?
         <>
         <h1>🎬 Filmes em alta da semana 📽️</h1>

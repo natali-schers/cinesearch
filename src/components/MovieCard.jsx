@@ -19,7 +19,7 @@ function MovieCard({ movie }) {
   }
 
   return (
-    <CardLink to={`/movie/${movie.id}`}>
+    <CardLink to={`/filme/${movie.id}`}>
       <Card>
 
         <Poster
