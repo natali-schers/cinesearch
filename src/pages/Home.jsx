@@ -16,7 +16,7 @@ function Home() {
   }, [])
 
   return (
-    <div>
+    <main>
       {loading && <p>Carregando...</p>}
 
       {erro && <p>{erro}</p>}
@@ -34,14 +34,15 @@ function Home() {
         </>
         : <p>Nenhum filme encontrado.</p>
       )}
-    </div>
+    </main>
   )
 }
 
 const MoviesContainer = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
   gap: 16px;
+  justify-content: center;
 `;
 
 export default Home;
