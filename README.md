@@ -1,16 +1,49 @@
-# React + Vite
+# 🎬 CineSearch
+> Aplicação web para busca e descoberta de filmes, com suporte a favoritos persistidos no navegador.
+> O objetivo deste desenvolvimento foi praticar conceitos fundamentais do React, como consumo de API externa utilizando Fetch, Context API, React Router DOM e persistência de dados com localStorage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Frontend:** React, Styled Components
+* **Integração:** API TMDB (The Movie Database)
+* **Outras Ferramentas:** React Router DOM, Vite
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌍 Site em Produção
 
-## Expanding the ESLint configuration
+Veja o projeto rodando:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 [CineSearch](https://cinesearch-rho.vercel.app/)
+
+---
+
+## ⚙️ Como Rodar o Projeto Localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/natali-schers/cinesearch
+   ```
+
+2. Acesse a pasta do projeto
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Crie um arquivo `.env` na raiz do projeto e adicione sua chave da API do TMDB:
+   ```
+   VITE_TMDB_API_KEY=sua_chave_aqui
+   ```
+
+5. Inicie o servidor:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+Desenvolvido por: **[Natali Schers](https://github.com/natali-schers)**
