@@ -14,7 +14,7 @@ function MovieCard({ movie }) {
     e.preventDefault()
 
     favorited
-      ? removeFavorite(movie)
+      ? removeFavorite(movie.id)
       : addFavorite(movie)
   }
 

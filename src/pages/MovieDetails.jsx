@@ -26,7 +26,7 @@ function MovieDetails() {
     e.preventDefault()
 
     favorited
-      ? removeFavorite(movie)
+      ? removeFavorite(movie.id)
       : addFavorite(movie);
   }
 

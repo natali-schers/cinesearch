@@ -25,7 +25,7 @@ function Favorites() {
 
 const MoviesContainer = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
   gap: 16px;
   justify-content: center;
 `;
