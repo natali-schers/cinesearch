@@ -49,7 +49,7 @@ const CardLink = styled(Link)`
 `
 
 const Card = styled.div`
-  background-color: #1a1a2e;
+  background-color: #0f0f1a;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;

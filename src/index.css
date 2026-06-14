@@ -15,7 +15,7 @@
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--sans);
+  font-family: var(--sans) !important;
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
@@ -34,7 +34,7 @@
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
-    --bg: #16171d;
+    --bg: #1f2020;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;

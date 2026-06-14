@@ -124,24 +124,21 @@ const Container = styled.main`
 `
 
 const BackButton = styled.button`
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  color: #888;
-  background: none;
-  border: 1px solid #888;
-  cursor: pointer;
-  padding: 8px 16px;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
-  transition: color 0.2s;
-  width: fit-content;
+    margin-bottom: 24px;
+    display: inline-block;
+    padding: 8px 16px;
+    color: #FFFFFF;
+    background-color: #0f0f1a;
+    border-radius: 8px;
+    text-decoration: unset;
+    border: 1px solid #0f0f1a;
+    width: fit-content;
+    font-size: 14px;
 
-  &:hover {
-    color: #ffffff;
-    border-color: #ffffff;
-  }
+    &:hover {
+        color: #ffffff;
+        border-color: #ffffff;
+    }
 `
 
 const Hero = styled.div`
@@ -181,7 +178,6 @@ const Badges = styled.div`
   gap: 8px;
 `
 
-// Para cada gênero, use esse componente dentro do Badges
 export const Badge = styled.span`
   font-size: 12px;
   padding: 3px 12px;
@@ -199,7 +195,6 @@ const MetaRow = styled.div`
   color: #888;
 `
 
-// Para cada item do MetaRow, use esse componente
 export const MetaItem = styled.span`
   display: flex;
   align-items: center;
@@ -258,11 +253,10 @@ const SectionTitle = styled.h2`
 `
 
 const Overview = styled.p`
-  font-size: 15px;
   line-height: 1.8;
-  color: #aaa;
+  color: #ffffff;
   margin: 0;
-  background: #1a1a2e;
+  background: #0f0f1a;
   padding: 1.25rem;
   border-radius: 8px;
 `
@@ -273,9 +267,8 @@ const StatsGrid = styled.div`
   gap: 12px;
 `
 
-// Para cada stat, use esse componente dentro do StatsGrid
 export const StatCard = styled.div`
-  background: #1a1a2e;
+  background: #0f0f1a;
   border-radius: 8px;
   padding: 1rem;
 `

@@ -43,7 +43,7 @@ const NavDesktop = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5rem;
+  padding: 0.5rem 2rem;
   height: 56px;
   background: #0f0f1a;
   border-bottom: 1px solid #1e1e2e;
@@ -70,7 +70,7 @@ const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 14px;
+  font-size: 16px;
   padding: 6px 14px;
   border-radius: 8px;
   text-decoration: none;
@@ -85,13 +85,12 @@ const NavLink = styled(Link)`
 `
 
 const Badge = styled.span`
-  background: #c0392b;
-  color: #ffffff;
-  font-size: 11px;
+  background: rgb(192, 57, 43);
+  color: rgb(255, 255, 255);
+  font-size: 10px;
   font-weight: 600;
-  width: 26px;
-  border-radius: 99px;
-  height: 26px;
+  border-radius: 100px;
+  padding: 3px 8px 4px;
 `
 
 const NavMobile = styled.nav`
